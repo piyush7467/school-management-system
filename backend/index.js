@@ -10,6 +10,7 @@ import studentRoute from './routes/studentRoute.js';
 import teacherRoute from './routes/teacherRoute.js';
 import { seedAdmin } from './utils/seedAdmin.js';
 import fcmRoute from "./routes/fcmRoutes.js";
+import path from "path";
 
 // ----------------------------
 // Express app setup
@@ -34,6 +35,15 @@ app.use('/api/admin/auth', adminRoute);
 app.use('/api/student/auth', studentRoute);
 app.use('/api/teacher/auth', teacherRoute);
 app.use("/api/user", fcmRoute);
+
+const __dirname = path.resolve();
+
+app.use(express.static(path.join(__dirname, '/frontend/dist')));
+
+// app.get('*', (_, res) => {
+//   res.sendFile(path.resolve(__dirname, 'frontend', 'dist', 'index.html'));
+// });
+
 
 // ----------------------------
 // 🔔 Optional: Test FCM Notification Route

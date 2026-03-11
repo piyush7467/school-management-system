@@ -28,6 +28,7 @@
     "@tailwindcss/vite": "^4.1.13",
     "@tanstack/react-table": "^8.21.3",
     "axios": "^1.12.2",
+    "backend": "file:..",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "firebase": "^12.4.0",
