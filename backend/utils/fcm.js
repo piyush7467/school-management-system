@@ -6,7 +6,9 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const serviceAccountPath = path.join(__dirname, "../config/serviceAccountKey.json");
+// const serviceAccountPath = path.join(__dirname, "../config/serviceAccountKey.json");
+
+const serviceAccountPath = path.join(__dirname, process.env.FIREBASE_SERVICE_ACCOUNT_KEY);
 const serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, "utf8"));
 
 // Initialize only if not already initialized
