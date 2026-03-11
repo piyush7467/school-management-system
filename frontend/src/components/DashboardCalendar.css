@@ -1,0 +1,57 @@
+/* Base calendar (light mode) */
+.react-calendar {
+  width: 100% !important;
+  max-width: 600px;
+  height: 600px !important;
+  background-color: white;
+  color: #1f2937; /* Tailwind gray-800 */
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb; /* Tailwind gray-200 */
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+/* Dark mode */
+.dark .react-calendar {
+  background-color: #1f2937; /* Tailwind gray-800 */
+  color: #e5e7eb; /* Tailwind gray-200 */
+  border: 1px solid #374151; /* Tailwind gray-700 */
+}
+
+.react-calendar__tile {
+  padding: 1rem !important;
+  font-size: 1.1rem !important;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover state */
+.react-calendar__tile:hover {
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Today */
+.react-calendar__tile--now {
+  background: #bfdbfe; /* blue-200 */
+  border-radius: 0.5rem;
+}
+
+/* Active (selected date) */
+.react-calendar__tile--active {
+  background: #2563eb !important; /* blue-600 */
+  color: white !important;
+  border-radius: 0.5rem;
+}
+
+/* Dark mode tile styling */
+.dark .react-calendar__tile--now {
+  background: #374151; /* gray-700 */
+  color: #f9fafb; /* gray-50 */
+}
+
+.dark .react-calendar__tile--active {
+  background: #3b82f6 !important; /* blue-500 */
+  color: white !important;
+}
