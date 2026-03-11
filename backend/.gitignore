@@ -6,3 +6,4 @@ dist
 serviceAccountKey.json
 config/serviceAccountKey.json
 
+backend/config/serviceAccountKey.json
