@@ -35,7 +35,7 @@ import AddStudents from './pages/Admin/Classes/AddStudents';
 import AddSubject from './pages/Admin/Classes/AddSubject';
 import SectionView from './pages/Admin/Classes/SectionView';
 import Subjects from './pages/Admin/Classes/Subjects';
-import StudentComplaints from './pages/Student/StudentComplaints';
+// import StudentComplaints from './pages/Student/StudentComplaints';
 import StudentAnnouncement from './pages/Student/StudentAnnouncement';
 import MyTransport from './pages/Student/MyTransport';
 import AdminTransportDashboard from './pages/Admin/Transports/TransportDashboard';
@@ -57,6 +57,7 @@ import TeacherClassPage from './pages/Teacher/TeacherClassPage';
 import ExamList from './pages/Admin/Exam/ExamList';
 import SubjectExamList from './pages/Admin/Exam/SubjectExamList';
 import RoomList from './pages/Admin/RoomList';
+import StudentComplaint from './pages/Student/StudentComplaint';
 
 const router = createBrowserRouter([
   { path: '/', element: <Login /> },
@@ -154,7 +155,7 @@ const router = createBrowserRouter([
       { path: 'dashboard', element: <StudentDashboard /> },
       { path: 'profile', element: <StudentProfile /> },
       { path: 'announcements', element: <StudentAnnouncement /> },
-      { path: 'complaints', element: <StudentComplaints /> },
+      { path: 'complaints', element: <StudentComplaint /> },
       { path: 'transport', element: <MyTransport /> },
       { path: 'my-attendance', element: <MyAttendance /> },
       { path: 'classes', element: <ManageStudentClass /> },
