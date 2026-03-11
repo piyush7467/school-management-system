@@ -23,12 +23,12 @@ const PORT = process.env.PORT || 8000;
 app.use(express.json());
 app.use(
   cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://smartschool-zyth.onrender.com/',
     credentials: true,
   })
 );
 
-// ----------------------------
+// ---------------------------- 
 // Routes
 // ----------------------------
 app.use('/api/admin/auth', adminRoute);

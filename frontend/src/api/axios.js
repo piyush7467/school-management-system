@@ -2,7 +2,7 @@ import axios from "axios";
 import { store } from "../redux/store";
 
 const API = axios.create({
-  baseURL: "http://localhost:8080/api",
+  baseURL: "https://smartschool-zyth.onrender.com/api",
 });
 
 API.interceptors.request.use((config) => {
